@@ -9,7 +9,7 @@
  *
  * Return: Pointer to the created node, or NULL on failure or if parent
  * is NULL
- * 
+ *
  * If parent already has a right-child, the new node takes its place, and
  * the old right-child becomes the right-child of the new node.
  */
