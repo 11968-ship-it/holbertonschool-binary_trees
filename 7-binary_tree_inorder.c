@@ -8,7 +8,8 @@
  * The value in the node
  * must be passed as a parameter to this function
  *
- * Description: If tree or func is NULL, does nothing. Traverses the binary tree
+ * Description: If tree or func is NULL, does nothing. Traverses the binary
+ * tree
  * by visiting the left subtree, then the current node, then the
  * right subtree.
  */
