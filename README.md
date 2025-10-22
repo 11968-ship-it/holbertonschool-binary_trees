@@ -74,11 +74,10 @@ return (0);
 ```
 
 ### Compilation
-We used the gcc compiler with the following flags:
+We used the basic gcc compiler with the following flags:
 ```bash
 $ gcc -Wall -Wextra -Werror -pedantic -std=gnu89
 ```
 
 ### Authors
-Thekira A. Ahmed
-Yara K. Alrasheed
+Thekira A. Ahmed & Yara K. Alrasheed
