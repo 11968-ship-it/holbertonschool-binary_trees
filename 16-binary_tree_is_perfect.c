@@ -1,20 +1,20 @@
 #include "binary_trees.h"
 
 /**
- * binary_tree_height - Measures the height of a binary tree (local helper)
+ * bt_height - Measures the height of a binary tree (local helper)
  * @tree: pointer to the root node of the tree to measure
  *
  * Return: height of the tree, or 0 if tree is NULL
  */
-static size_t binary_tree_height(const binary_tree_t *tree)
+static size_t bt_height(const binary_tree_t *tree)
 {
     size_t lh, rh;
 
     if (tree == NULL)
         return (0);
 
-    lh = tree->left ? 1 + binary_tree_height(tree->left) : 0;
-    rh = tree->right ? 1 + binary_tree_height(tree->right) : 0;
+    lh = tree->left ? 1 + bt_height(tree->left) : 0;
+    rh = tree->right ? 1 + bt_height(tree->right) : 0;
 
     return (lh > rh ? lh : rh);
 }
@@ -49,7 +49,7 @@ int binary_tree_is_perfect(const binary_tree_t *tree)
 	if (tree == NULL)
 		return (0);
 
-	height = binary_tree_height(tree);
+	height = bt_height(tree);
 	size = binary_tree_size(tree);
 	perfect_nodes = ((size_t)1 << (height + 1)) - 1;
 
