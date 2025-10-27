@@ -1,6 +1,7 @@
 # Holbertonschool-binary_trees
 
-A C project that implements core operations on binary trees, including node creation, insertion, deletion, and tree traversals. It also includes functions to measure tree properties (height, size, balance) and identify relationships like siblings and uncles. The project emphasizes recursion, pointer management, and tree structure analysis.
+A C project that implements core operations on binary trees, including node creation, insertion, deletion, and tree traversals.  
+It also provides functions to measure properties (height, size, balance) and identify relationships (siblings, uncles).
 
 ## Data Structure
 **Basic Binary Tree**
@@ -23,17 +24,11 @@ struct binary_tree_s
 
 typedef struct binary_tree_s binary_tree_t;
 ```
-**Binary Search Tree**
+**Type Aliases**
 ```c
-typedef struct binary_tree_s bst_t;
-```
-**AVL Tree**
-```c
-typedef struct binary_tree_s avl_t;
-```
-**Max Binary Heap**
-```c
-typedef struct binary_tree_s heap_t;
+typedef struct binary_tree_s bst_t; /*Binary Search Tree*/
+typedef struct binary_tree_s avl_t; /*AVL Tree*/
+typedef struct binary_tree_s heap_t; /*Max Binary Heap*/
 ```
 
 ## Prototypes
@@ -57,11 +52,7 @@ Additionally, it offers tools to determine familial relationships within the tre
 The implementation emphasizes recursion and pointer manipulation.
 
 ### Example Implementation
-Here's how we used this prototype to check whether the node is a leaf:
-```c
-int binary_tree_is_leaf(const binary_tree_t *node);
-```
-
+Here's how we used one of the prototypes to check whether the node is a leaf:
 ```c
 int binary_tree_is_leaf(const binary_tree_t *node)
 {
