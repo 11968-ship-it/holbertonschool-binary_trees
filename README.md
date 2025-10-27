@@ -1,7 +1,6 @@
 # Holbertonschool-binary_trees
 
-A C project that implements core operations on binary trees, including node creation, insertion, deletion, and tree traversals.  
-It also provides functions to measure properties (height, size, balance) and identify relationships (siblings, uncles).
+A C project that implements core operations on binary trees, including node creation, insertion, deletion, and tree traversals. It also includes functions to measure tree properties (height, size, balance) and identify relationships like siblings and uncles. The project emphasizes recursion, pointer management, and tree structure analysis.
 
 ## Data Structure
 **Basic Binary Tree**
